@@ -6,7 +6,8 @@ Para evitar repetir IFs, criei dois parametros, metrica1 e metrica2, para recebe
 def avaliar(input, metrica1, metrica2):
     if input < metrica1:
         message = 'DESEJAVEL'
-    elif input < metrica2:
+    # Adicionado um <= considerando a inclusão do valor da segunda métrica de acordo com o que foi pedido na questão
+    elif input <= metrica2:
         message = 'LIMITROFE'
     else:
         message = 'ALTO'
